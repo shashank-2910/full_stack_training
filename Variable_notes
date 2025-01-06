@@ -1,0 +1,194 @@
+1.	HTML
+Hyper text markup language
+Text—content
+Hyper text – A text containing Multiple links(hyper links)
+Markup Language- specific set of tags by using these we can create content on the websites
+
+		Can create structured content on the website.
+2.	CSS
+Cascading Style Sheets
+It is used to make the website in attractive and animative way
+It is used to add styles to the website
+Font
+Color
+Position
+Shape
+3.	JavaScript
+It is used to create Dynamic Websites;
+--forms validations
+
+1.Static Websites:
+HTML,CSS
+--remains constant to every one
+Ex: Facebook Login Page
+
+
+2. Dynamic Websites
+--changes to every one(data)
+Ex: facebook(feed) #data
+
+
+JavaScript:
+Variables
+1.	Static typed 
+2.	Dynamically typed
+Variables are used to store the data (any kind of data).
+1)	Case Sensitive
+2)	Start with letters, _(underscore), $(dollarsign)
+3)	Cant start with numbers
+4)	Reserved words(keywords) are not allowed
+5)	Allow letters, _(underscore), $(dollarsign) and numbers
+
+How to declare variables:
+•	var
+•	let
+•	const
+
+
+
+
+
+var name='Nani'
+        console.log(name)
+        document.write(name)
+        var a3='Raju'
+        console.log(a3)
+        document.write(a3)
+        var a='Venkat'
+        a= 'Naveen'
+        console.log(a)
+        document.write(a)
+
+Reassigning the variables is possible by var
+Reassigning the variables with let  is also accepted
+Reassigning with const not accepted
+Uncaught TypeError: Assignment to constant variable.
+
+
+var a=1
+        a=5
+        console.log(a+a)
+
+        let b=1
+        b=5
+        b=b+b
+        console.log(b)
+
+        const c=10
+        c=15
+        console.log(c)
+
+
+
+
+Redeclaring with var is accepted
+Redeclaring with let is not accepted
+	Uncaught SyntaxError: Identifier 'a' has already been declared
+Redeclaring with const is not accepted
+	Uncaught SyntaxError: Identifier 'a' has already been declared
+
+ var a=10
+        var a=15
+        console.log(a)
+
+        let a=1
+        let a=5
+        console.log(a)
+
+        const a=3.14
+        const a=120
+        console.log(a)
+
+
+Block Scope
+
+Variables declared with var doesnot have block scope
+Variables declared with let have block scope 
+
+let a=11
+        {
+            let a=5
+            console.log(a+a)
+        }
+
+        console.log(a+a)
+
+        var b=1;
+        var b=3;
+        {
+            var b=5;
+            console.log(b+b); //10
+        }
+        console.log(b+b) //10
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <script>
+
+
+        // var name='Nani'
+        // console.log(name)
+        // document.write(name)
+        // var a3='Raju'
+        // console.log(a3)
+        // document.write(a3)
+        // var a='Venkat'
+        // a= 'Naveen'
+        // console.log(a)
+        // document.write(a)
+        
+
+        // var a=1
+        // a=5
+        // console.log(a+a)
+
+        // let b=1
+        // b=5
+        // b=b+b
+        // console.log(b)
+
+        // const c=10
+        // c=15
+        // console.log(c)
+
+        // var a=10
+        // var a=15
+        // console.log(a)
+
+        // let a=1
+        // let a=5
+        // console.log(a)
+
+        // const a=3.14
+        // const a=120
+        // console.log(a)
+
+
+        // let a=11
+        // {
+        //     let a=5
+        //     console.log(a+a)
+        // }
+
+        // console.log(a+a)
+
+
+        // var b=1;
+        // var b=3;
+        // {
+        //     var b=5;
+        //     console.log(b+b); //10
+        // }
+        // console.log(b+b) //10
+
+
+    </script>
+</body>
+</html>
