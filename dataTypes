@@ -1,0 +1,84 @@
+Data Types:
+Two Types:
+1.	Primitive data types
+2.	Non-Primitive data types
+
+1.	Primitive data : predefined ; we can store single values
+a.	Numbers: Intergers, float
+Ex: 1, -1, 4, -4, 5.6, -5.6
+        let a=3.5
+        let b='3.5'
+        console.log(typeof(a))
+        console.log(typeof(b))
+        document.write(typeof(a),'<br>') 
+        document.write(typeof(b)) 
+
+b.	String: Stream of characters enclosed in quotes.
+    ---single, double, backtick quotes;
+    Single, double quotes work same
+    Back ticks introduced in ES6
+    It provides extra functionalities, we can put
+    variables into the string
+    Ex: ‘5’,”5”,’String’, “String”, `String`
+
+
+        let a=3.5
+        let b=3.5
+        console.log("hi+a+b")
+        console.log(`hi+${a+b}`)
+
+c.	Boolean: true or false
+d.	Null: empty or no value
+e.	Undefined: a declared variable with no value(without initialization)
+
+2.	Non-Primitive data types: arrays and objects;
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let a=3.5
+        // let b='3.5'
+        // console.log(typeof(a))
+        // console.log(typeof(b))
+        // document.write(typeof(a),'<br>') 
+        // document.write(typeof(b)) 
+
+        let a=3.5;
+        let b=3.5;
+        let ex='10';
+        console.log("hi+a+b");
+        console.log('hi+a+b');
+        console.log(`hi+${a+b}`);
+        console.log(`${ex} Shashank`)
+        document.write(`${ex} Shashank`,'<br>')
+        console.log(`${ex}`,'Nani')
+        console.log(`${ex}`)
+        console.log(3+'10')
+
+        let x='Hari'
+        let y='Krishna'
+        let age=30
+        let greeting=`I am ${x+y}, my age is ${age} years`
+        document.write(greeting,"<br>")
+
+        let first_name='sai'
+        let last_name='kumar'
+        let result= `React students= ${first_name+last_name}`
+        document.write(result,'<br>')
+
+
+
+        
+    </script>
+</body>
+</html>
