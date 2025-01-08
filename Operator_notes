@@ -1,0 +1,137 @@
+JavaScript Operators
+
+1.	Arithmetic Operators:
+
++, -, *, /, %, **, ++, --
+        let a=5;
+        let b=3;
+        b++;
+        document.write(b,'<br>');
+        document.write(a%b,'<br>');
+        document.write(a/b,'<br>');
+        document.write(a*b,'<br>');
+        document.write(a**b,'<br>');
+
+
+2.	Assignment Operators:
+
+=, +=, -=, *=, /=,
+        let a=10;
+        let b=a;
+
+        document.write(a,'<br>')
+        document.write(b,'<br>')
+
+        a+=5;
+        document.write(a,'<br>')
+        document.write(b,'<br>')
+
+
+3.	Logical Operators:
+&&  and
+||  or
+!  not
+
+        let a=10;
+        let b=2;
+
+        document.write(a>5 && b<5,'<br>');
+        document.write(a>5 && b>5,'<br>');
+        document.write(a>5 || b>5,'<br>');
+        document.write(a>15 || b>5,'<br>');
+        document.write(!a<25,'<br>');
+        document.write(!b>25,'<br>');
+
+
+4.	Relational Operators
+<,> ==,===, !=, >=, <=
+
+        let a=105;
+        let b='105'
+        let c=10;
+
+        document.write(a!=b,'<br>')
+        document.write(a==b,'<br>')
+        document.write(a===b,'<br>')
+        document.write(a>=c,'<br>')
+        document.write(a<=c,'<br>')
+
+5.	Ternary Operator
+        let r= (a>100) ?'Ac-off':'Ac-on'
+        document.write(r,'<br>');
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=5;
+        let b=3;
+        b++;
+        document.write(b,'<br>');
+        document.write(a%b,'<br>');
+        document.write(a/b,'<br>');
+        document.write(a*b,'<br>');
+        document.write(a**b,'<br>');
+
+        let a=20;
+        let b=5;
+
+        a+=30;
+        document.write(a,'<br>')
+
+        b-=3;
+        
+        document.write(b,'<br>')
+
+        let a=10;
+        let b=a;
+
+        document.write(a,'<br>')
+        document.write(b,'<br>')
+
+        a+=5;
+        document.write(a,'<br>')
+        document.write(b,'<br>')
+
+        let a=10;
+        let b=2;
+
+        document.write(a>5 && b<5,'<br>');
+        document.write(a>5 && b>5,'<br>');
+        document.write(a>5 || b>5,'<br>');
+        document.write(a>15 || b>5,'<br>');
+        document.write(!a<25,'<br>');
+        document.write(!b>25,'<br>');
+
+        let a=105;
+        let b='105'
+        let c=10;
+
+        document.write(a!=b,'<br>')
+        document.write(a==b,'<br>')
+        document.write(a===b,'<br>')
+        document.write(a>=c,'<br>')
+        document.write(a<=c,'<br>')
+        let r= (a>100) ?'Ac-off':'Ac-on'
+        document.write(r,'<br>');
+
+        let a = prompt("First Number: ")
+        let b = prompt("Second Number: ")
+        console.log(typeof(a))
+        document.write(typeof(a),'<br>')
+        console.log(typeof(b))
+        document.write(typeof(b),'<br>')
+
+
+    </script>
+</body>
+</html>
