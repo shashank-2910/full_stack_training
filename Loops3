@@ -1,0 +1,68 @@
+for(let i=2;i<=9;i=i+2){
+            if(i>4){
+                break;
+            }
+            console.log(i+1);
+        }
+
+
+        for(let i=1;i<=8;i=i+2){
+            if(i==5){
+                continue;
+            }
+            console.log(i+1);
+        }
+
+
+
+for(let i=2;i<=8;i=i+1){
+            if(i>5){
+                continue;
+            }
+            console.log(i+2);
+        }
+
+
+Nested Loops:
+A loop inside the another loop
+The inner loop will execute one time for each iteration of outer loop
+An inner loop within the repeating the another block
+
+        for (let i = 1; i <= 3; i++) {
+            document.write(i, '<br>');
+            for (let j = 1; i <= 4; i++) {
+                document.write(j, '<br>');
+            }
+            document.write('<br>')
+        }
+
+
+Patterns
+        for(let i=1;i<=5;i++){
+            for(let j=1;j<=i;j++){
+                document.write('*');
+            }
+            document.write('<br>')
+        }
+
+let n = 5;
+        for (let i = 1; i <= n; i++) {
+
+            for (let j = 1; j <= i; j++) {
+                document.write(j);
+            }
+            document.write("<br>");
+        }
+
+
+
+        for (let i = 1; i <= 4; i++) {
+            for (let j = 1; j <= 4 - i; j++) {
+                document.write("&nbsp;");
+            }
+            for (let k = 1; k <= i; k++) {
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+        document.write("<br>");
