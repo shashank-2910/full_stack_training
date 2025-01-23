@@ -1,0 +1,42 @@
+Functions
+A function is reusable block of code
+It can be call anywhere in the code.
+function nani(){
+            console.log("Hello Shashank");
+        }
+        nani();
+
+function greet(name){
+            console.log('Hello'+name)
+        }
+
+        let name = prompt("Enter your Name: ");
+        greet(name)
+
+function add(first,second){
+            console.log("The sum is: "+(first+second))
+        }
+
+        let first = parseInt(prompt("Enter first number: "))
+        let second = parseInt(prompt("Enter second number: "))
+        add(first,second)
+
+function add(first,second){
+            return first+second;
+        }
+
+        let first = parseInt(prompt("Enter first number: "));
+        let second = parseInt(prompt("Enter second number: "));
+        let result= add(first,second);
+        console.log("The sum is: ",result);
+        function prime(num){
+            for(let i=2;i<num;i++){
+                if(num%i==0){
+                    console.log("not prime number");
+                    return;
+                }
+            }
+            console.log("Prime Number");
+        }
+
+        prime(10);
