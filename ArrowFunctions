@@ -1,0 +1,40 @@
+Arrow Functions
+
+        let sample=()=>{
+            console.log("Sample Arrow Function");
+        }
+
+        sample();
+
+
+Arrow functions with parameters
+
+        let x =(a,b)=>{
+            console.log(a+b);
+        }
+        x(20,30)
+        x(40,50)
+
+Arrow function as an expression
+        let age=18;
+        let welcome = (age<18) ? ()=> console.log('Hi Nani') : ()=> console.log('Hi Raj');
+
+        welcome();
+Asynchronous Function
+        console.log('Hi Nani');
+        setTimeout(()=>{
+            console.log('Hi Iam waiting')
+        },5000);
+
+        console.log("I am in Lab")
+
+        function greet(name,callback){
+            console.log(`Hello ${name}`);
+            callback();
+        }
+
+        function sayGoodBye(){
+            console.log('Good Bye');
+        }
+
+        greet('sam',sayGoodBye)
