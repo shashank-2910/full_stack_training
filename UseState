@@ -1,0 +1,33 @@
+React Hooks:
+It is mainly used to manage state and life cycle features in functional components.
+State: it allows components to be dynamic ,interactive and capable of responding to user input or change over time.#hold the values for the compinents
+1)useStateHook: allows you to add state to functional components.
+Syntax:
+Const[state,setState]=useState(intial value)
+State:this is current state
+setState:this is a function to update the state
+intial value:the value you want to set as the intial value.
+
+
+
+import { useState } from 'react'
+
+import './App.css'
+
+function App() {
+  const [count, setCount] = useState(0)
+
+  return (
+    <>
+      
+      
+      <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+      </div>
+    </>
+  )
+}
+
+export default App
