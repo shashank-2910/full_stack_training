@@ -1,0 +1,79 @@
+Assignment:
+Imagine you are building an app that displays the details of user’s profile. The data about the user includes their name and email. The App component will pass their user data to a deeply nested child component called Profile.
+
+1.	Use prop drilling to pass the data from App to Profile
+2.	Use React Context to pass the data directly to profile 
+3.	import "./App.css";
+4.	import React, { createContext, useContext } from "react";
+5.	
+6.	//create an context to hold data
+7.	const DataContext = createContext();
+8.	
+9.	//parent component
+10.	function App() {
+11.	  const name = "G.Shashank";
+12.	  const email = "shashankraj2908@gmail.com";
+13.	  return (
+14.	
+15.	      <User1 name={name} email={email}/>
+16.	  );
+17.	}
+18.	//user1 component
+19.	function User1(props) {
+20.	  return <User2 name={name} email={email}/>;
+21.	}
+22.	function User2(props) {
+23.	  return <User4 name={name} email={email}/>;
+24.	}
+25.	function User4(props) {
+26.	  const data = useContext(DataContext);
+27.	  return(
+28.	  <div>
+29.	    <h4>{name}</h4>
+30.	    <h4>{email}</h4>
+31.	  </div>
+32.	  )
+33.	}
+34.	export default App;
+35.	
+
+
+import "./App.css";
+import React, { createContext, useContext } from "react";
+
+//create an context to hold data
+const DataContext = createContext();
+
+//parent component
+function App() {
+  const name = "G.Shashank";
+  const email = "shashankraj2908@gmail.com";
+  return (
+    <DataContext.Provider value={[name, email]}>
+      <User1 />
+    </DataContext.Provider>
+  );
+}
+//user1 component
+function User1() {
+  return <User2/>;
+}
+//user 2 component
+function User2() {
+  return <User3 />;
+}
+//user3 component
+function User3() {
+  return <User4 />;
+}
+//user4 component
+function User4() {
+  const data = useContext(DataContext);
+  return(
+  <div>
+    <h4>{data[0]}</h4>
+    <h4>{data[1]}</h4>
+  </div>
+  )
+}
+export default App;
